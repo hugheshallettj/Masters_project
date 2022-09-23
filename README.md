@@ -1,5 +1,6 @@
 # Masters_project
 Repository for MRes. in AI and ML final project
+[gp_trainers.py](https://github.com/hugheshallettj/Masters_project/blob/main/gp_trainers.py) contains the functions used to carry out experiments. It contains a function called `sgpr_trainers` that trains an SGPR model according to the input settings. 
 
 ## Abstract
 Sparse Gaussan Process Regression (SGPR), proposed by Titsias, is a scalable Gaussian process method that shows excellent performance at regression tasks. It uses $M$ _inducing variables_ to summarise a dataset of $N$ points (where $M\leq N$) and makes an improvement to the computational cost of full Gaussian processes, which is impractically high when modelling large datasets: the time for computation scales as $\mathcal{O}(N^3)$ and thus, to learn from as few as 1000 datapoints, exact GPs are an unaffordable solution. For SGPR however, complexity scales as $\mathcal{O}(NM^2)$. This allows us to make use of the perks of GPs (uncertainty estimates, automatic regularisation, flexible priors, etc.) for a much broader range of problems.
